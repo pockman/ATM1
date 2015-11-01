@@ -18,6 +18,7 @@ public class GuiKeyPad extends Panel{
 		{"1","2","3","4","5","6","7","8","9","0","Delete","Enter"};
 	private GridLayout gridLayout;
 	private GuiScreen screen=new GuiScreen();
+	static int i;
 	
 	public GuiKeyPad()
 	{
@@ -30,12 +31,11 @@ public class GuiKeyPad extends Panel{
 		}
 		setLayout(gridLayout);
 		
-		for (int i=0; i < 9; i ++){
-			int j=i;
+		for (i=0; i < 9; i ++){
 	        buttons[i].addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e)
 	            {
-	                getKeyPadInput(j);
+	                getKeyPadInput(i);
 	                System.out.println(str);
 	                setString();
 	            }
