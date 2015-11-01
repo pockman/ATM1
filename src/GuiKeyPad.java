@@ -17,8 +17,8 @@ public class GuiKeyPad extends Panel{
 	private static final String[] names=
 		{"1","2","3","4","5","6","7","8","9","0","Delete","Enter"};
 	private GridLayout gridLayout;
-	private GuiScreen screen=new GuiScreen();
-	static int i;
+
+	static int i; 
 	
 	public GuiKeyPad()
 	{
@@ -82,8 +82,5 @@ public class GuiKeyPad extends Panel{
 		return str;
 	}
 	
-	private void setString(){
-		screen.show(str);
-	}
 	
 }
